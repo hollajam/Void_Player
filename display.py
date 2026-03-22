@@ -21,7 +21,7 @@ serial = i2c(port=1, address=0x3C)
 device = ssd1306(serial)
 
 def startup():
-    gif = Image.open('/home/kash/testoled/animation.gif')
+    gif = Image.open('animation.gif')
     for frame in ImageSequence.Iterator(gif):
         # Resize frame to display dimensions
         frame = frame.resize((128, 64))
