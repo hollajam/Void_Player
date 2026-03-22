@@ -20,7 +20,7 @@ At its core, Void Player utilizes a decoupled, non-blocking state-machine archit
 
 ### Software Interface
 
-  * **The Web Dashboard**:  ![atl](pics/Screenshot%20From%202026-03-22%2022-09-51.png) 
+  * **The Web Dashboard**:  ![atl](pics/Screenshot%20From%202026-03-22%2022-09-51.png) ![atl](pics/Screenshot%20From%202026-03-22%2022-54-50.png)
   * **File Transfer**: Drag-and-drop your audio files directly to the Pi's local storage. ![atl](pics/fileshare.png)  
   * **Device Management**: Restart, reboot, configure network settings, and update player preferences. ![atl](pics/about.png) 
 
@@ -94,7 +94,7 @@ python3 main.py
 
 Navigate to `http://<YOUR_PI_IP>:8000` on any device connected to the same local network.
 
-> **Note:** If you don't know your Raspberry Pi's IP address, you can find it by checking your router's admin dashboard (under Network \> DHCP Server \> Client List), looking at the physical OLED screen via the "Network" menu, or by running `hostname -I` directly on the Pi using a monitor.
+> **Note:** If you don't know your Raspberry Pi's IP address, you can find it by checking your router's admin dashboard (under Network \> DHCP Server \> Client List), looking at the physical OLED screen via the "File Share" menu, or by running `hostname -I` directly on the Pi using a monitor.
 
 *Deployment Note: For a true headless appliance experience, it is highly recommended to configure your script to run as a `systemd` background service on boot.*
 
